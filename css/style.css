@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "avengers";
+    src: url(../AVENGEANCE_HEROIC_AVENGER.ttf);
+}
+:root { 
+    --primary-color: #333;
+    --secunday-color: #444;
+    --overlay-color: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.avengers{
+    color: white;
+    font-family: "avengers";
+    font-size: 4rem;
+    text-align: center; 
+}
+
+a{
+    color: var(--secunday-color);
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+
+}
+
+.navbaar {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.navbaar .container {
+    display: grid;
+
+}
+
+.section-a {
+    position: relative;
+    background: url(../img/thanos.jpg) no-repeat bottom center/cover;
+    height: 530px;
+}
+
+.section-a .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+
+}
+
+.section-a-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0
+
+
+}
+
+.section-a-inner h1{
+    
+    font-family: "avengers";
+    font-size: 4rem;
+    
+}
+
+.section-b .galery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 450px;
+}
+
+.galery img {
+    height: 100%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#biografia{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../img/biografia.jpg)no-repeat bottom center/cover;
+}
+
+#historia{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../img/historia.jpg)no-repeat bottom center/cover;
+}
+
+#joias{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../img/joias.jpg)no-repeat bottom center/cover;
+}
+
+#poderes{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../img/hqs.jpg)no-repeat bottom center/cover;
+}
+
+.texto{
+    padding: 20px;
+}
+
+.botao {
+    opacity: 1;
+    transition: 0.5s
+}
+
+.botao:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
